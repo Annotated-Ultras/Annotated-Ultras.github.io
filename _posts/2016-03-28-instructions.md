@@ -1,34 +1,15 @@
 ---
 layout: post_default
+kramdown:
+  input: GFM
 ---
-
 ## Check out the demo
 Use the search bar to look for specific features or just click around.  
 [Demo site](http://collinschwantes.github.io/Annotated_Ultras/)
 
-## Running the site
+## Instructions for creating a new Interactive Annotated Image
 
-This site is built with [jekyll](https://jekyllrb.com/). 
-
-To run the site make sure that jekyll is installed 
-`gem install jekyll`
-
-`which -a jekyll` should return a ruby shim path (not a blank)
-and/or running `jekyll` returns a list of options
-
-Navigate to the folder in the commandline `cd path/to/folder` 
-
-After that, `jekyll serve` should boot up the site at localhost:4000
-
-
-If that doesn't work. Check out the instructions for installing jekyll [here](https://jekyllrb.com/docs/installation/) 
-- If you don't have rubygems installed you might need to install the following:
-    -  [Homebrew](http://brew.sh/)
-    -  [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
-    -  [Rubygems](https://rubygems.org/pages/download)
-
-##Instructions for creating a new Interactive Annotated Image
-03/21/16
+{{ site.time | date_to_long_string }}
 
 
 Follow these instructions to create an annotated image in [inkscape](https://inkscape.org/en/) and the corresponding [jekyll site](https://jekyllrb.com/). 
@@ -37,16 +18,18 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 [Download](https://github.com/collinschwantes/Annotated_Ultras/archive/master.zip) the repository and transfer the files to a folder with an appropriate name
 2.  Move the image you will annotate into the **images** folder and delete the old file. 
 3.  Open the **_data** folder and then open the **hao_terms.json** file
-    -  you will notice that entry has 5 attributes including a unique `ID`
+    -  you will notice that entry has 5 attributes including a unique `ID`  
+    
     ```
-    {
-    "title": "Antenna",
-    "definition": "The appendage that is composed of ringlike sclerites and the anatomical structures encircled by these sclerites and that is articulated with the cranium.",
-    "URI": "http://purl.obolibrary.org/obo/HAO_0000101",
-    "Preferred.Term": "antenna",
-    "ID": "HAO_0000101"
-  },
+    {  
+    "title": "Antenna",  
+    "definition": "The appendage that is composed of ringlike sclerites and the anatomical structures encircled by these sclerites and that is articulated with the cranium.",  
+    "URI": "http://purl.obolibrary.org/obo/HAO_0000101",  
+    "Preferred.Term": "antenna",  
+    "ID": "HAO_0000101"  
+    },  
     ```
+
     -  Leave this file open, you will use it as you annotate the SVG
 4.  Start a new SVG file in Inkscape
 5.  Import (`ctrl+i`) the image file from the images folder into your new svg 
@@ -79,3 +62,26 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 16. Upload the `_site` folder to a server or create a `gh-pages` branch that contains the full project. Pat yourself on the back.
     - If you have questions about generatng the _site folder, see [running the site](#running-the-site) and the documentation for [jekyll](https://jekyllrb.com/docs/home/)
     - If you create a gh-pages branch, be sure to change the urls in the index.html file to site.github.url
+
+## Running the site
+
+This site is built with [jekyll](https://jekyllrb.com/). 
+
+To run the site make sure that jekyll is installed 
+`gem install jekyll`
+
+`which -a jekyll` should return a ruby shim path (not a blank)
+and/or running `jekyll` returns a list of options
+
+Navigate to the folder in the commandline `cd path/to/folder` 
+
+After that, `jekyll serve` should boot up the site at localhost:4000
+
+
+If that doesn't work. Check out the instructions for installing jekyll [here](https://jekyllrb.com/docs/installation/) 
+
+If you don't have rubygems installed you might need to install the following:  
+
+*  [Homebrew](http://brew.sh/)
+*  [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+*  [Rubygems](https://rubygems.org/pages/download)
