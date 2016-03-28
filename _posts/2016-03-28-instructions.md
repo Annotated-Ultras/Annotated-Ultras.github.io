@@ -1,6 +1,7 @@
 ---
-
+layout: default
 ---
+
 ## Check out the demo
 Use the search bar to look for specific features or just click around.  
 [Demo site](http://collinschwantes.github.io/Annotated_Ultras/)
