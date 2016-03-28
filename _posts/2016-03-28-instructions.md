@@ -17,7 +17,7 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 [Download](https://github.com/Annotated-Ultras/Template_Site/archive/master.zip) the repository and transfer the files to a folder with an appropriate name
 2.  Move the image you will annotate into the **images** folder and delete the old file. 
 3.  Open the **_data** folder and then open the **hao_terms.json** file
-    -  you will notice that entry has 5 attributes including a unique `ID`  
+    -  you will notice that each entry has 5 attributes including a unique `ID`  
     
     ```
     {  
@@ -30,8 +30,7 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
     ```
 
     -  Leave this file open, you will use it as you annotate the SVG
-4.  Add the image you will annotate to **images** folder
-5.  Open template.svg from the **_includes** folder 
+5.  Open template.svg from the **_includes** folder with inkscape
 6.  Import (`ctrl+i`) the image file from the **images** folder into template.svg 
     - select link 
     - resize the image to fit within the page (solid lines) 
@@ -53,14 +52,14 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
     - ![xml editor class](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.23.56.png)
     - this a good place to save
 13. Repeat steps 7-12 until all visible HAO terms have been added. 
-14. Open your SVG in a text editor (eg TextEdit) and delete the first line 
+14. Open your SVG in a text editor (eg TextEdit or NotePad) and delete the first line 
     - delete the line selected in this image
     - ![textedit_delete](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.31.42.png)
 15. Copy the remaining text and paste it into the file `svg.html` that lives in the **_includes** folder 
     - You can use TextEdit for this as well
     - If there is already text in the `svg.html` file, replace it with the new svg text
 16. Open `index.html` and change the title
-17. If you have downloaded the files and this is your first time working on them, log on to github and click the create a new repository button
+17. If you have downloaded the files and this is your first time working on them, log on to github and click the new repository button
     - Initialize with a read.me and write something nice about your image
     - click create repository
     - drag and drop the folder containing your entire project into the repository
