@@ -11,7 +11,7 @@ Use the search bar to look for specific features or just click around.
 
 updated: {{ site.time | date_to_long_string }}
 
-Follow these instructions to create an annotated image in [inkscape](https://inkscape.org/en/) and the corresponding [jekyll site](https://jekyllrb.com/). 
+Follow these instructions to create an annotated image in [inkscape](https://inkscape.org/en/) and the corresponding website. 
 
 1.  [Fork](https://github.com/Annotated-Ultras/Template_Site#fork-destination-box) this project to create a copy for your github account or 
 [Download](https://github.com/Annotated-Ultras/Template_Site/archive/master.zip) the repository and transfer the files to a folder with an appropriate name
