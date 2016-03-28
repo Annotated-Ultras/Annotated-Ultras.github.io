@@ -7,15 +7,14 @@ kramdown:
 Use the search bar to look for specific features or just click around.  
 [Demo site](http://collinschwantes.github.io/Annotated_Ultras/)
 
-## Instructions for creating a new Interactive Annotated Image
+## Create an Annotated Image
 
-{{ site.time | date_to_long_string }}
-
+updated: {{ site.time | date_to_long_string }}
 
 Follow these instructions to create an annotated image in [inkscape](https://inkscape.org/en/) and the corresponding [jekyll site](https://jekyllrb.com/). 
 
-1.  [Fork](https://github.com/collinschwantes/Annotated_Ultras/blob/master/Inkscape_instructions.md#fork-destination-box) this project to create a copy for your github account or 
-[Download](https://github.com/collinschwantes/Annotated_Ultras/archive/master.zip) the repository and transfer the files to a folder with an appropriate name
+1.  [Fork](https://github.com/Annotated-Ultras/Template_Site#fork-destination-box) this project to create a copy for your github account or 
+[Download](https://github.com/Annotated-Ultras/Template_Site/archive/master.zip) the repository and transfer the files to a folder with an appropriate name
 2.  Move the image you will annotate into the **images** folder and delete the old file. 
 3.  Open the **_data** folder and then open the **hao_terms.json** file
     -  you will notice that entry has 5 attributes including a unique `ID`  
@@ -31,17 +30,18 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
     ```
 
     -  Leave this file open, you will use it as you annotate the SVG
-4.  Start a new SVG file in Inkscape
-5.  Import (`ctrl+i`) the image file from the images folder into your new svg 
+4.  Add the image you will annotate to **images** folder
+5.  Open template.svg from the **_includes** folder 
+6.  Import (`ctrl+i`) the image file from the **images** folder into template.svg 
     - select link 
     - resize the image to fit within the page (solid lines) 
     - alternatively, you can resize the document (`ctrl+shift+d`) to fit the image
-6.  Save the document as a plain SVG and name it appropriately
-7.  Start by outlining one of the larger segments (head, mesosoma, metasoma) - order is important for the click functionality 
-    - Pressing `B` will bring up the bezier tool, this allows you to place points around a structure and then modify them to create curves. 
+7.  Save the document as a plain SVG and rename it
+7.  Start by outlining larger features - order is important for the click functionality 
+    - Pressing `B` will bring up the bezier tool, this allows you to place points around a feature and modify them to create curves. 
 8.  After you have outlined the segment, change the fill `ctrl+shift+f` to RGBA **97cafcff** and the stroke to none
 9.  Select the feature you just created (quickly switch to the selection tool by pressing `S`) and press `ctrl+shift+x` to open the XML editor. 
-    - press `ctrl g` to make a new group 
+    - press `ctrl g` to make a new group (do this even if the feature is a single path)
     - ![xml editor](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.00.40.png)
 10. Click on `id` in the Name column
     - ![xml editor selected](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.05.37.png)
@@ -59,15 +59,20 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 15. Copy the remaining text and paste it into the file `svg.html` that lives in the **_includes** folder 
     - You can use TextEdit for this as well
     - If there is already text in the `svg.html` file, replace it with the new svg text
-16. Upload the `_site` folder to a server or create a `gh-pages` branch that contains the full project. Pat yourself on the back.
-    - If you have questions about generatng the _site folder, see [running the site](#running-the-site) and the documentation for [jekyll](https://jekyllrb.com/docs/home/)
-    - If you create a gh-pages branch, be sure to change the urls in the index.html file to site.github.url
+16. Open `index.html` and change the title
+17. If you have downloaded the files and this is your first time working on them, log on to github and click the create a new repository button
+    - Initialize with a read.me and write something nice about your image
+    - click create repository
+    - drag and drop the folder containing your entire project into the repository
+    - create a new [branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/) in your repository called `gh-pages`
+18. If you are doing everything in github, change the name of your repository in the **settings** tab
+19. Request that your annotated image be added to the organization page and pat yourself on the back. 
 
-## Running the site
+## Running the site locally
 
 This site is built with [jekyll](https://jekyllrb.com/). 
 
-To run the site make sure that jekyll is installed 
+To run the site locally make sure that jekyll is installed 
 `gem install jekyll`
 
 `which -a jekyll` should return a ruby shim path (not a blank)
