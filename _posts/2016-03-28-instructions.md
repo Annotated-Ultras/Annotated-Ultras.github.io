@@ -15,7 +15,11 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 
 1.  [Fork](https://github.com/Annotated-Ultras/Template_Site#fork-destination-box) this project to create a copy for your github account or 
 [Download](https://github.com/Annotated-Ultras/Template_Site/archive/master.zip) the repository and transfer the files to a folder with an appropriate name
-2.  Move the image you will annotate into the **images** folder and delete the old file. 
+2.  Places to find images:
+    - [Specimage](http://specimage.osu.edu/)
+    - [USGS Bee Inventory](https://www.flickr.com/photos/usgsbiml/)
+    - [Alex Wild's Ants](http://www.alexanderwild.com/Ants/Taxonomic-List-of-Ant-Genera)
+    - Please give proper attribution when necessary
 3.  Open the **_data** folder and then open the **hao_terms.json** file
     -  you will notice that each entry has 5 attributes including a unique `ID`  
     
@@ -32,7 +36,7 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
     -  Leave this file open, you will use it as you annotate the SVG
 5.  Open template.svg from the **_includes** folder with inkscape
 6.  Import (`ctrl+i`) the image file from the **images** folder into template.svg 
-    - select link 
+    - select **embed**
     - resize the image to fit within the page (solid lines) 
     - alternatively, you can resize the document (`ctrl+shift+d`) to fit the image
 7.  Save the document as a plain SVG and rename it
