@@ -66,6 +66,7 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 15. Copy the remaining text and paste it into the file `svg.html` that lives in the **_includes** folder 
     - You can use TextEdit for this as well
     - If there is already text in the `svg.html` file, replace it with the new svg text
+    - [CAUTION](http://computers.tutsplus.com/tutorials/quick-tip-configure-textedit-for-coding-html--mac-44786) TextEdit may be setup to display formatted html. You want to see the code.
 16. Open `index.html` and change the title
 17. If you have downloaded the files and this is your first time working on them, log on to github and click the new repository button
     - Initialize with a read.me and write something nice about your image
