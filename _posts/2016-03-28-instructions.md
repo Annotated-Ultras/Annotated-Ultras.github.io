@@ -7,7 +7,7 @@ kramdown:
 Use the search bar to look for specific features or just click around.  
 [Demo site](http://collinschwantes.github.io/Annotated_Ultras/)
 
-## Create an Annotated Image
+## Create an Annotated Image Site
 
 updated: {{ site.time | date_to_long_string }}
 
