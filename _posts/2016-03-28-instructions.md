@@ -38,18 +38,22 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 7.  Save the document as a plain SVG and rename it
 7.  Start by outlining larger features - order is important for the click functionality 
     - Pressing `B` will bring up the bezier tool, this allows you to place points around a feature and modify them to create curves. 
+    - `ctrl l` autosmooths the shape
 8.  After you have outlined the segment, change the fill `ctrl+shift+f` to RGBA **97cafcff** and the stroke to none
+    * use `ctrl d` to bring up the dropper tool 
+    * holding shift with the dropper tool allows you to change the outline color
 9.  Select the feature you just created (quickly switch to the selection tool by pressing `S`) and press `ctrl+shift+x` to open the XML editor. 
     - press `ctrl g` to make a new group (do this even if the feature is a single path)
     - ![xml editor](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.00.40.png)
 10. Click on `id` in the Name column
     - ![xml editor selected](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.05.37.png)
-11. Change the group id to the **HAO_terms** id
+11. Change the group id to the proper id in **HAO_terms.json**
     - ![xml editor changed](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.07.36.png)
     - *NOTE* use `ctrl v` to paste in inkscape
     - click `set` to change the id
 12. Give the feature the `class` "bodypart" by entering "class" into the attribute name bar and "bodypart" into the attribute value box
     - ![xml editor class](https://raw.githubusercontent.com/collinschwantes/Annotated_Ultras/master/Screenshot%202016-03-21%2013.23.56.png)
+    - click `set` to change the class
     - this a good place to save
 13. Repeat steps 7-12 until all visible HAO terms have been added. 
 14. Open your SVG in a text editor (eg TextEdit or NotePad) and delete the first line 
@@ -62,9 +66,10 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 17. If you have downloaded the files and this is your first time working on them, log on to github and click the new repository button
     - Initialize with a read.me and write something nice about your image
     - click create repository
-    - drag and drop the folder containing your entire project into the repository
-    - create a new [branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/) in your repository called `gh-pages`
+    - drag and drop all the files into your repository
+      - *do not add the containg folder*   
 18. If you are doing everything in github, change the name of your repository in the **settings** tab
+19. Create a new [branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/) in your repository called `gh-pages`
 19. Request that your annotated image be added to the organization page and pat yourself on the back. 
 
 ## Running the site locally
