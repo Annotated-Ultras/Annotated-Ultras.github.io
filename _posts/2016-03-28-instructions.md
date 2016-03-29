@@ -35,11 +35,11 @@ Follow these instructions to create an annotated image in [inkscape](https://ink
 
     -  Leave this file open, you will use it as you annotate the SVG
 5.  Open template.svg from the **_includes** folder with inkscape
-6.  Import (`ctrl+i`) the image file from the **images** folder into template.svg 
+6.  Import (`ctrl+i`) the image file from the into template.svg 
     - select **embed**
     - resize the image to fit within the page (solid lines) 
     - alternatively, you can resize the document (`ctrl+shift+d`) to fit the image
-7.  Save the document as a plain SVG and rename it
+7.  Save the document as a plain SVG and *rename* it
 7.  Start by outlining larger features - order is important for the click functionality 
     - Pressing `B` will bring up the bezier tool, this allows you to place points around a feature and modify them to create curves. 
     - `ctrl l` autosmooths the shape
